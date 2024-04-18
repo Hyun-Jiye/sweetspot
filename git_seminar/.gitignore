@@ -1,0 +1,21 @@
+# secret-folder란 이름의 폴더와 그 내용들
+secret-folder/
+
+# 모든 secret2_user2.yml
+# secret2_user2.yml
+
+# 모든 .yml 확장자 파일
+# *.yml
+
+# .yml 확장자지만 무시하지 않을 파일
+# !secret1_user1.yml
+
+# secret2 이름의 파일 또는 폴더와 그 내용들
+# secret2
+
+# secret-folder/secret2 폴더 바로 안의 secret2.log와 .yml 파일들
+# secret-folder/secret2/secret2.log
+# secret-folder/secret2/*.yml
+
+# logs 폴더 바로 안, 또는 그 안의 다른 폴더(들) 안의 debug.log
+# secret-folder/secret2/**/secret2.log
