@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d448efdaac97f60d7277d8a651bcf581 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d448efdaac97f60d7277d8a651bcf581" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d448efdaac97f60d7277d8a651bcf581 = L.map(
+                "map_d448efdaac97f60d7277d8a651bcf581",
+                {
+                    center: [37.55455942857143, 127.01807045714285],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf062f4dd70ea603bfe2c5e26d934c30 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cf062f4dd70ea603bfe2c5e26d934c30.addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var heat_map_4a1fb8d73aee803676e039530daeadcb = L.heatLayer(
+                [[37.5513128, 127.0109839, 13849466], [37.5536559, 127.0242774, 20968457], [37.5510106, 127.0197905, 35247485], [37.5468082, 127.0214527, 17455188], [37.5573917, 127.0147951, 20113711], [37.5579144, 127.01367, 44342124], [37.5638224, 127.0215236, 28850383]],
+                {"blur": 15, "maxZoom": 13, "minOpacity": 0.5, "radius": 40}
+            );
+        
+    
+            heat_map_4a1fb8d73aee803676e039530daeadcb.addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var marker_f3b9df0d10aa69090fe498a9565e1ff8 = L.marker(
+                [37.5513128, 127.0109839],
+                {}
+            ).addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var icon_193ebf17cdab12814fadc145da2c6312 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3b9df0d10aa69090fe498a9565e1ff8.setIcon(icon_193ebf17cdab12814fadc145da2c6312);
+        
+    
+        var popup_3c0c42c21922e832c74e73dc16516520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b2ea7fdf5bd3698b4fc9e01d0807c13 = $(`<div id="html_0b2ea7fdf5bd3698b4fc9e01d0807c13" style="width: 100.0%; height: 100.0%;">약수동 : 유동인구 13849466</div>`)[0];
+                popup_3c0c42c21922e832c74e73dc16516520.setContent(html_0b2ea7fdf5bd3698b4fc9e01d0807c13);
+            
+        
+
+        marker_f3b9df0d10aa69090fe498a9565e1ff8.bindPopup(popup_3c0c42c21922e832c74e73dc16516520)
+        ;
+
+        
+    
+    
+            var marker_04b555c87324ba84331abcc171df7e9c = L.marker(
+                [37.5536559, 127.0242774],
+                {}
+            ).addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var icon_2263519ced572794f380cafb672ca679 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04b555c87324ba84331abcc171df7e9c.setIcon(icon_2263519ced572794f380cafb672ca679);
+        
+    
+        var popup_979541982b17b1f54e981d0c50f43df8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b97f185cc5ea31451e0ff98d8c1600bc = $(`<div id="html_b97f185cc5ea31451e0ff98d8c1600bc" style="width: 100.0%; height: 100.0%;">금호1가동 : 유동인구 20968457</div>`)[0];
+                popup_979541982b17b1f54e981d0c50f43df8.setContent(html_b97f185cc5ea31451e0ff98d8c1600bc);
+            
+        
+
+        marker_04b555c87324ba84331abcc171df7e9c.bindPopup(popup_979541982b17b1f54e981d0c50f43df8)
+        ;
+
+        
+    
+    
+            var marker_22837b576c4ec0674517c775a9e6b6c8 = L.marker(
+                [37.5510106, 127.0197905],
+                {}
+            ).addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var icon_52f24aed271a1f7de96af5acce82eaea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22837b576c4ec0674517c775a9e6b6c8.setIcon(icon_52f24aed271a1f7de96af5acce82eaea);
+        
+    
+        var popup_567d2167a5c9d527576e998d2a4d52b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5c1f3505e527cf0c8dfe51a7cab7da0 = $(`<div id="html_d5c1f3505e527cf0c8dfe51a7cab7da0" style="width: 100.0%; height: 100.0%;">금호2.3가동 : 유동인구 35247485</div>`)[0];
+                popup_567d2167a5c9d527576e998d2a4d52b9.setContent(html_d5c1f3505e527cf0c8dfe51a7cab7da0);
+            
+        
+
+        marker_22837b576c4ec0674517c775a9e6b6c8.bindPopup(popup_567d2167a5c9d527576e998d2a4d52b9)
+        ;
+
+        
+    
+    
+            var marker_c648673f0cd9715a68b3836d9944838d = L.marker(
+                [37.5468082, 127.0214527],
+                {}
+            ).addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var icon_a811a23014fe67122fdbb2a77540b6f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c648673f0cd9715a68b3836d9944838d.setIcon(icon_a811a23014fe67122fdbb2a77540b6f7);
+        
+    
+        var popup_a0faeb83b324545f51925f72145772ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30d92ff176fc25f52b55573df5daa7ed = $(`<div id="html_30d92ff176fc25f52b55573df5daa7ed" style="width: 100.0%; height: 100.0%;">금호4가동 : 유동인구 17455188</div>`)[0];
+                popup_a0faeb83b324545f51925f72145772ce.setContent(html_30d92ff176fc25f52b55573df5daa7ed);
+            
+        
+
+        marker_c648673f0cd9715a68b3836d9944838d.bindPopup(popup_a0faeb83b324545f51925f72145772ce)
+        ;
+
+        
+    
+    
+            var marker_0b79eb071e5bbdf1e37058c25d8e1c17 = L.marker(
+                [37.5573917, 127.0147951],
+                {}
+            ).addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var icon_9359b462b263f3abc804c2ff02679c48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b79eb071e5bbdf1e37058c25d8e1c17.setIcon(icon_9359b462b263f3abc804c2ff02679c48);
+        
+    
+        var popup_7de2979c87e9a4266bbae2e0116ea27b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2d0f0a5dbf4a76e8c96498ef513c249 = $(`<div id="html_e2d0f0a5dbf4a76e8c96498ef513c249" style="width: 100.0%; height: 100.0%;">청구동 : 유동인구 20113711</div>`)[0];
+                popup_7de2979c87e9a4266bbae2e0116ea27b.setContent(html_e2d0f0a5dbf4a76e8c96498ef513c249);
+            
+        
+
+        marker_0b79eb071e5bbdf1e37058c25d8e1c17.bindPopup(popup_7de2979c87e9a4266bbae2e0116ea27b)
+        ;
+
+        
+    
+    
+            var marker_25d743a78ef9d9fb737fcf9e9288a798 = L.marker(
+                [37.5579144, 127.01367],
+                {}
+            ).addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var icon_49bdc6a64b282587c4fe4bbc3efc700c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_25d743a78ef9d9fb737fcf9e9288a798.setIcon(icon_49bdc6a64b282587c4fe4bbc3efc700c);
+        
+    
+        var popup_9268b61ecd58fe51fb54dec41a50641b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a47cf62475e538890d3e21f3cfebd25 = $(`<div id="html_2a47cf62475e538890d3e21f3cfebd25" style="width: 100.0%; height: 100.0%;">신당동 : 유동인구 44342124</div>`)[0];
+                popup_9268b61ecd58fe51fb54dec41a50641b.setContent(html_2a47cf62475e538890d3e21f3cfebd25);
+            
+        
+
+        marker_25d743a78ef9d9fb737fcf9e9288a798.bindPopup(popup_9268b61ecd58fe51fb54dec41a50641b)
+        ;
+
+        
+    
+    
+            var marker_c18c842360da2c76aa92f63b877484cc = L.marker(
+                [37.5638224, 127.0215236],
+                {}
+            ).addTo(map_d448efdaac97f60d7277d8a651bcf581);
+        
+    
+            var icon_554cc318d05ca006438306cb5f7a7e24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c18c842360da2c76aa92f63b877484cc.setIcon(icon_554cc318d05ca006438306cb5f7a7e24);
+        
+    
+        var popup_70a48d076f2a34c632f90c2c9b6014f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a8a65e5026c287a60080fecec019242 = $(`<div id="html_9a8a65e5026c287a60080fecec019242" style="width: 100.0%; height: 100.0%;">신당5동 : 유동인구 28850383</div>`)[0];
+                popup_70a48d076f2a34c632f90c2c9b6014f5.setContent(html_9a8a65e5026c287a60080fecec019242);
+            
+        
+
+        marker_c18c842360da2c76aa92f63b877484cc.bindPopup(popup_70a48d076f2a34c632f90c2c9b6014f5)
+        ;
+
+        
+    
+</script>
+</html>
